@@ -1,5 +1,5 @@
-streamlit==1.38.0
-opencv-python>=4.10.0
-pytesseract==0.3.13
-Pillow==10.4.0
-numpy==1.26.4
+streamlit
+opencv-python-headless
+pytesseract
+Pillow
+numpy
