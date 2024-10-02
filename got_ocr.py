@@ -11,3 +11,14 @@ image_file = 'ocr_test1.png'
 res = model.chat(tokenizer, image_file, ocr_type='ocr')
 
 print(res)
+#requirements:
+# !pip install torch
+# !pip install torchvision
+# !pip install transformers
+# !pip install tiktoken
+# !pip install verovio
+# !pip install accelerate
+# !pip install transformers
+# !pip install tiktoken
+# !pip install verovio
+# !pip install Pillow
