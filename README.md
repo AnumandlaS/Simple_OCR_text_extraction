@@ -1,7 +1,9 @@
 # Simple_OCR_text_extraction
 This project aims to extract text from the images user inputs, a small step towards building Optical Character Recognition Models. I have used pytesseract a vey beginner friendly library for OCR. This project aims to provide users with an efficient tool to convert images containing text into editable and searchable text formats, supporting both English and Hindi languages.
-# Note:
-I have tried a lot to complete this task using ColPali (Byaldi library) + Huggingface transformers for Qwen2-VL, but I couldn't do it. Transformers require quite a good knowledge and RAM. I couldn't pull it off this time, but I will try to, some other time.
+# Note1: 
+I have provided here the code for using GOT_OCR2.0 model, which uses this huggingface model 'srimanth-d/GOT_CPU' as it does not require gpu. As it takes so much of time to get the text after uploading an image, I did not want to build the streamlit app on this and it felt like copying and pasting the code(as I do not have much knowldge about transformers). And it requires quite a bit RAM.
+# Note2:
+I have tried a lot to complete this task using ColPali (Byaldi library) + Huggingface transformers for Qwen2-VL, but I couldn't do it. Transformers require quite a good knowledge and RAM. I couldn't pull it off this time, but I will try to, some other time. 
 # Technical Stack
 - Frontend: Streamlit for building the web interface.
 - Backend: Python with OpenCV for image processing and Tesseract for OCR.
