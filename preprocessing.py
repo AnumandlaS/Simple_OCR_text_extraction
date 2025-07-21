@@ -73,18 +73,18 @@ def extract_text(image,language):
     img = cv2.imread(image)
 
      # Check if the image is loaded properly
-    # if img is None:
-    #     raise ValueError("Image not found or unable to load.")
+    if img is None:
+        raise ValueError("Image not found or unable to load.")
 
     # Check number of channels
-    # if len(img.shape) != 3 or img.shape[2] != 3:
-    #     raise ValueError("Invalid image format. Expected a color image.")
+    if len(img.shape) != 3 or img.shape[2] != 3:
+        raise ValueError("Invalid image format. Expected a color image.")
 
     # Preprocess the image (your existing preprocessing steps)
-    #gray_image = grayscale(img)  # Call your grayscale function
-    #no_noise_image = noise_removal(gray_image)  # Remove noise
-    #thickened_image = thick_font(no_noise_image)  # Thicken the text
-    #deskewed_image = deskew(thickened_image)  # Deskew the image
+    gray_image = grayscale(img)  # Call your grayscale function
+    no_noise_image = noise_removal(gray_image)  # Remove noise
+    thickened_image = thick_font(no_noise_image)  # Thicken the text
+    deskewed_image = deskew(thickened_image)  # Deskew the image
     #you can adjust them accordingly
 
     # Extract text with Tesseract using Hindi language
